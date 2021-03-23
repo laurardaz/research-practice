@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{заголовок}\PYG{p}{\PYGZgt{}}HTML\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{заголовок}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{полужирный}\PYG{p}{\PYGZgt{}}HyperText Markup Language\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{полужирный}\PYG{p}{\PYGZgt{}} \PYG{p}{\PYGZlt{}}\PYG{n+nt}{курсив}\PYG{p}{\PYGZgt{}}(гипертекст маркап лэнгуидж)\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{курсив}\PYG{p}{\PYGZgt{}} \PYGZhy{} язык разметки гипертекста.
+\end{Verbatim}

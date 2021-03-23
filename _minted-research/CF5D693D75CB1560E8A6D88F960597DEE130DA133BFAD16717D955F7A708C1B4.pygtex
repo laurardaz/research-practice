@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{img}
+  \PYG{n+na}{src}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}http://example.com/cat.jpg\PYGZdq{}}
+  \PYG{n+na}{title}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Мурка\PYGZdq{}}
+  \PYG{n+na}{alt}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Рыжая кошка валяется в снегу\PYGZdq{}}
+  \PYG{n+na}{width}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}640\PYGZdq{}}
+  \PYG{n+na}{height}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}480\PYGZdq{}}
+\PYG{p}{\PYGZgt{}}
+\end{Verbatim}
