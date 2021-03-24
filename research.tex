@@ -2,8 +2,6 @@
 \usepackage{gost}
 \usepackage{minted}
 
-
-
 \addto\captionsrussian{\def\refname{Список используемой литературы}}
 
 \begin{document}
@@ -76,7 +74,7 @@ HyperText Markup Language (гипертекст маркап лэнгуидж) -
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.5\linewidth]{pics_practice/disabled_button.png}}
 \caption{}
-\label{}
+\label{1}
 \end{figure}
 
 
@@ -95,7 +93,7 @@ HyperText Markup Language (гипертекст маркап лэнгуидж) -
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{pics_practice/interpretation_HTML.png}}
 \caption{}
-\label{}
+\label{2}
 \end{figure}
 
 \emph{Произвольный регистр.}
@@ -166,13 +164,13 @@ HyperText Markup Language (гипертекст маркап лэнгуидж) -
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{pics_practice/index_html.png}}
 \caption{}
-\label{}
+\label{3}
 \end{figure}
 Сохраняем файл и открываем в браузере. Видим:
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{pics_practice/header.png}}
 \caption{}
-\label{}
+\label{4}
 \end{figure}
 
 
@@ -309,7 +307,7 @@ Visual Studio Code - рекомендация.
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.4\linewidth]{pics_practice/google.png}}
 \caption{}
-\label{}
+\label{5}
 \end{figure}
 
 
@@ -402,7 +400,7 @@ https://google.com/doodles
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.7\linewidth]{pics_practice/houston.png}}
 \caption{Скриншот страницы}
-\label{}
+\label{6}
 \end{figure}
 
 Выполненное задание загружено на github.com по адресу https://github.com/laurardaz/Houston
@@ -454,7 +452,7 @@ p {
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.5\linewidth]{pics_practice/simple_selector.png}}
 \caption{}
-\label{}
+\label{7}
 \end{figure}
 
 Что мы сделали? Мы раскрасили текст "Привет, о многоуважаемый ученик!" в красный цвет. Как мы это сделали? Мы обратились ко всем элементам \verb <p>  и задали им красный цвет текста. Такой селектор называется селектор по тегу.
@@ -584,7 +582,7 @@ p.example {}
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{pics_practice/houston2.png}}
 \caption{}
-\label{}
+\label{8}
 \end{figure}
 
 Выполненное задание загружено на github.com по адресу https://github.com/laurardaz/houston-css
@@ -603,6 +601,50 @@ p.example {}
 \item изменение свойств текста: цвет, расстояние между буквами и строками, подчёркивание/надчёркивание/зачёркивание, выравнивание и т.д.
 \end{itemize}
 Чтобы узнать, как применить нужный стиль, просто загугли или воспользуйся справочником.
+
+
+
+
+
+\section{Цвет и фон}
+
+\emph{Фон}
+
+В CSS блокам можно задавать фон. Фоном может быть цвет или картинка. Картинку можно располагать с помощью координат, центрировать, растягивать на весь блок, или задавать в виде повторяющегося бесконечного паттерна. Всё это делается с помощью свойства \verb  background.
+Примеры:
+\begin{minted}{css}
+.example {
+   /* цвет фона «продающий красный», задан в HEX-формате */
+   background: #e64c0c;
+}
+
+.example {
+   /* картинка на фоне */
+   background: url('images/nude-president.png'); 
+
+   /* background-size отвечает за размер картинки, cover - картинка растягивается на весь блок, сохраняя пропорции */
+   background-size: cover;
+}
+\end{minted}
+
+\emph{Цвет}
+
+Цвет можно ставить не только фону, но и тексту, границам, теням. Есть несколько способов указать цвет:
+\begin{itemize}
+\item Имя цвета из списка HTML-цветов, например "red", "green", "blue" , "lemonchiffon".
+\item HEX, цвет в шестнадцатеричном формате. Начинается с решётки, например \verb #3ae6сa. Можно подобрать с помощью любого color picker'а. Первые шесть символов отвечают за цвет, последние два - необязательные - отвечают за прозрачность. Но прозрачность удобнее задавать через RGBA и HSLA, потому что десятичные дроби удобнее читать и редактировать.﻿
+\item RGB (red, green, blue) - цвет, заданый тремя значениями (от 0 до 255) базовых цветов - красного, зелёного и синего. Пример: \verb rbg(255, 123, 13).
+\item RGBA - тоже самое, что и RGB, только с прозрачностью, которая задаётся четвёртым числом от 0 до 1, пример: \verb rgba(144, 32, 16, 0.5).
+\item HSL, HSLA - цветовая модель, в которой цветовыми координатами являются тон, насыщенность и светлота. Подробнее о ней. HSLA - HSL + прозрачность. Пример: hsl(120, 100\%, 50\%).
+\end{itemize}
+
+
+
+\section{Домашнее задание}
+
+В этом домашнем задании я научилась работать с макетами. Обычно, когда разработчику поручают сверстать сайт, ему дают макет. Раньше макеты отсылали в PSD (формат фотошопа), а маргинальные дизайнеры вообще давали обычные картинки. Сейчас самый удобный способ передать макет - загрузить файл макета (например, в PSD) в специальный сервис. Там он преобразуется в интерактивный макет, который можно смотреть прямо в браузере. Разработчику нужно просто перейти по ссылке.  будем пользоваться одним из таких сервисов, он называется Figma.
+
+
 
 
 
